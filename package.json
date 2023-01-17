@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "knex migrate:rollback && knex migrate:latest && knex seed:run && node index.js"
+    "old-start": "knex migrate:rollback && knex migrate:latest && knex seed:run && node index.js"
   },
   "repository": {
     "type": "git",
