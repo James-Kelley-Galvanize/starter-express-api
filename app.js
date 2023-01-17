@@ -11,12 +11,12 @@ app.use(cors());
 app.use(morgan(`tiny`));
 
 app.get(`/`, (req, res) => {
-  res.status(500).send(JSON.stringify({ message: `SERVER ONLINE` }));
+  res.status(200).send(JSON.stringify({ message: `SERVER ONLINE` }));
 });
 app.get(`/cats`, (req, res) => {
   getCats()
     .then((data) => {
-      res.status(500).send(JSON.stringify(data));
+      res.status(200).send(JSON.stringify(data));
     })
     .catch((error) => {
       res
